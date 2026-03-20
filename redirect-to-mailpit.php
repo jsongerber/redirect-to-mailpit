@@ -11,14 +11,13 @@
  * Network: True
  */
 
+use PHPMailer\PHPMailer\PHPMailer;
 
 // Disable emails in local development
 if (defined('REDIRECT_EMAILS_TO')) {
 
   // Force use of phpmailer to be able to intercept emails with phpmailer_init action
-  error_log(print_r('load from theme', true));
-  error_log(print_r('option_' . PostmanOptions::POSTMAN_OPTIONS, true));
-  add_filter('option_' . PostmanOptions::POSTMAN_OPTIONS, function ($options) {
+  add_filter('option_postman_options', function ($options) {
     error_log(print_r('salut', true));
     // error_log(print_r($options, true));
     $options['smtp_mailers'] = 'phpmailer';
