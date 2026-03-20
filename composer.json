@@ -1,8 +1,8 @@
 {
-	"name": "jsongerber/wp-sync-db",
+	"name": "jsongerber/redirect-to-mailpit",
 	"type": "wordpress-muplugin",
 	"homepage": "https://github.com/jsongerber/redirect-to-mailpit",
-	"license": "GPL-2.0",
+	"license": "MIT",
 	"description": "Redirects all outgoing emails to Mailpit, a local email testing tool.",
 	"keywords": [
 		"wordpress",
